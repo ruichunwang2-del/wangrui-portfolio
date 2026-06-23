@@ -1,10 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>我的作品集</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>王锐椿 | 个人作品集</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+body {
+  background: #0f172a;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* 顶部导航 */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(15,23,42,0.8);
+  backdrop-filter: blur(10px);
+}
+
+nav h1 {
+  font-size: 18px;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 24px;
+  background: #38bdf8;
+  color: #000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* section */
+section {
+  padding: 80px 60px;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* 卡片 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 40px;
+  opacity: 0.6;
+}
+</style>
 </head>
+
 <body>
-  <h1>王锐椿 作品集网站</h1>
+
+<nav>
+  <h1>王锐椿</h1>
+  <div>
+    <a href="#about">关于我</a>
+    <a href="#work">作品</a>
+    <a href="#contact">联系</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h2>前端开发 & 作品集展示</h2>
+  <p>HTML · CSS · JavaScript · UI Design</p>
+  <a class="btn" href="#work">查看作品</a>
+</div>
+
+<section id="about">
+  <h2 class="section-title">关于我</h2>
+  <p>
+    我是一名前端开发学习者，专注于网页设计与用户体验优化。
+  </p>
+</section>
+
+<section id="work">
+  <h2 class="section-title">作品展示</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>简历网站</h3>
+      <p>个人在线简历展示系统</p>
+    </div>
+
+    <div class="card">
+      <h3>作品集V5</h3>
+      <p>现代化UI作品展示页面</p>
+    </div>
+
+    <div class="card">
+      <h3>管理后台</h3>
+      <p>数据可视化后台界面</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">联系我</h2>
+  <p>Email：your@email.com</p>
+</section>
+
+<footer>
+  © 2026 王锐椿 - All Rights Reserved
+</footer>
+
 </body>
 </html>
